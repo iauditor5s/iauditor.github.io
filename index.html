@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
- 
   <title>Welcome to iFiix</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -44,10 +43,12 @@
             <span class="d-inline-block alert alert-warning" role="alert">You can not Contacts until you verify your email!</span>
           </div>
         </div>
-        
-    
+        <button type="button" id="addContactModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#addContactModal">Add Contact</button>
+      </center>
+      <div id="contacts"></div>
+    </main>
   </div>
- 
+
   </div>
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
     <div class="modal-dialog">
@@ -143,24 +144,17 @@
         </div>
       </div>
     </div>
-  <form name="submit-to-google-sheet">
-    </div>
-        <button type="button" id="maintenanceModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#maintenanceModal">Add Request</button>
-      </center>
-      <div id="maintenance"></div>
-    </main>
-  <div class="modal fade" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenance" aria-hidden="true">
+  <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="Add Contact" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-
+        <form method="POST" id="contactForm" name="contactForm">
           <div class="modal-header">
-            <h4 class="modal-title" id="maintenanceModalLabel">Maintenance Request</h4>
+            <h4 class="modal-title" id="addContactModalLabel">Add Contact</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-
-             <label for="date">Date</label>
+              <label for="date">Date</label>
               <input type="date" class="form-control" name="date" id="date" required placeholder="Enter date">
             </div>
             <div class="form-group">
@@ -209,10 +203,8 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary addValue">Submit</button>
           </div>
-
-</form>  
-
-<div class="loading js-loading is-hidden">
+        </form>
+          <div class="loading js-loading is-hidden">
       <div class="loading-spinner">
         <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
       </div>
@@ -220,8 +212,7 @@
 
     <p class="js-success-message is-hidden">Request receieved Thank you..!</p>
     <p class="js-error-message is-hidden">Error!</p>
-          </div>
-       
+  </div>
       </div>
     </div>
   </div>
