@@ -16,37 +16,6 @@
   overflow: visible;
 }
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 3em;
-  line-height: 1.3em;
-  letter-spacing: -4px;
-  margin: 0.8rem 0 0 0;
-  padding-bottom: 5px;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.65em;
-  margin: 0.6em auto 0.6em auto;
-  padding: 0;
-  width: 23em;
-}
-
-p.small {
-  font-size: 0.8em;
-}
-
-a,
-a:visited,
-a:hover {
-  color: #333;
-  font-weight: 600;
-}
 
 
 /***************************
