@@ -107,6 +107,6 @@ header + hr {
       animation: dash 1.5s ease-in-out infinite;
     }
 p {
-    color: gold;
+    color: blue;
     font-weight: bold;
 } 
