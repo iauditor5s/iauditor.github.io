@@ -1,4 +1,4 @@
-document.getElementById("maintenanceModal").addEventListener("submit");   
+$(document).ready(function(){
 const scriptURL = 'https://script.google.com/macros/s/AKfycbw71mAUv7MJeRvw6k-7rXew3z5sIBnEslBg7h6xq5222lU-2XQ/exec'
    const form = document.forms['submit-to-google-sheet']
    const loading = document.querySelector('.js-loading')
