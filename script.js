@@ -4,7 +4,7 @@ $(document).ready(function(){
     login: '#loginForm',
     settings: '#settingsForm',
     updateUserInfo: '#updateForm',
-    addContact: '#contactForm',
+   
     register: '#registerForm',
     forgotPassword: '#forgotPasswordForm',
   }
