@@ -174,27 +174,7 @@ $(document).ready(function(){
     }
   })
 
-  //save contact
-  $(forms.addContact).on('submit', function( event ) {  
-    event.preventDefault();
-    if( user != null ){
-      var formData = extractFormData(forms.addContact);
-      if( formData.name !== '' || formData.email !== '' ){
-        contactsRef.child(user.uid).push({
-          name: formData.name,
-          email: formData.email,
-          location: {
-            city: formData.city,
-            state: formData.state,
-            zip: formData.zip,
-          }
-        });
-        document.contactForm.reset();
-      } else {
-        alert('Please fill at-least name or email!');
-      }
-    }
-  });
+ 
 
   Auth.onAuthStateChanged(updateUserStatus);
 
