@@ -144,41 +144,78 @@
         </div>
       </div>
     </div>
-  <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="Add Contact" aria-hidden="true">
+   <div class="modal fade" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenance" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form method="POST" id="contactForm" name="contactForm">
+
           <div class="modal-header">
-            <h4 class="modal-title" id="addContactModalLabel">Add Contact</h4>
+            <h4 class="modal-title" id="maintenanceModalLabel">Maintenance Request</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" name="name" id="name" required placeholder="Enter name">
+
+             <label for="date">Date</label>
+              <input type="date" class="form-control" name="date" id="date" required placeholder="Enter date">
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="email" id="email" required placeholder="Enter Email">
-            </div>
-            <h3>Location</h3>
+              <label for="area">Maintenance Area</label>
+<br>
+<select name="area" width= 100%>
+ <option value="wet lab">Wet Lab</option>
+    <option value="Physical Lab">Physical Lab</option>
+    <option value="CF lab">CF Lab</option>
+    <option value="Fiber lab">Fiber Lab</option>
+<option value="Footwear Lab">Footwear Lab</option>
+<option value="Analytical Lab">Analytical Lab</option>
+</select>
+<br>
+<br>
+
+           
             <div class="form-group">
-              <label for="city">City</label>
-              <input type="text" class="form-control" name="city" id="city" placeholder="Enter City">
+              <label for="eqname">Equipment Name</label>
+              <input type="text" class="form-control" name="eqname" id="eqname" placeholder="Enter Equipment Name">
             </div>
             <div class="form-group">
-              <label for="email">State</label>
-              <input type="text" class="form-control" name="state" id="state" placeholder="Enter State">
+              <label for="eqnumber">Equipment No</label>
+              <input type="text" class="form-control" name="eqnumber" id="eqnumber" placeholder="Enter Equipment No">
             </div>
             <div class="form-group">
-              <label for="zip">Zip</label>
-              <input type="text" class="form-control" name="zip" id="zip" placeholder="Enter Zip Code">
+              <label for="issue">Issue Details</label>
+              <input type="text" class="form-control" name="issue" id="issue" placeholder="Enter Issue Details">
+            </div>
+<div class="form-group">
+              <label for="urgency">Urgency</label>
+<br>
+<select name="urgency">
+ <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+</select>
+<br>
+</div>
+<div class="form-group">
+              <label for="sender">Request Sender</label>
+              <input type="text" class="form-control" name="sender" id="sender" placeholder="Enter Request Sender Name">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary addValue">Submit</button>
           </div>
+
+</form>  
+
+<div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden">Request receieved Thank you..!</p>
+    <p class="js-error-message is-hidden">Error!</p>
+  </div>
         </form>
       </div>
     </div>
