@@ -13,7 +13,7 @@
 <body class="auth-false">
   <div class="container">
     <header class="clearfix">
-      <h1>iFiix</h1>
+      <h1>Contact Book</h1>
       <div class="userAuth unauthenticated pull-right">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Register</button>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button>
@@ -40,16 +40,15 @@
             Email not verified! Please verify your email!<br/>To send verification email, <a href="#" id="send-verification">Click Here</a>
           </div>
           <div class="text-center">
-            <span class="d-inline-block alert alert-warning" role="alert">You can not add request until you verify your email!</span>
+            <span class="d-inline-block alert alert-warning" role="alert">You can not Contacts until you verify your email!</span>
           </div>
         </div>
-        <form name="submit-to-google-sheet">
-        <button type="button" id="maintenanceModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#maintenanceModal">Add Request</button>
+        <button type="button" id="addContactModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#addContactModal">Add Contact</button>
       </center>
-      <div id="maintenance"></div>
+      <div id="contacts"></div>
     </main>
   </div>
-  
+ 
   </div>
   <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
     <div class="modal-dialog">
@@ -145,77 +144,41 @@
         </div>
       </div>
     </div>
-  <div class="modal fade" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="Add request" aria-hidden="true">
+  <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="Add Contact" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-       
+        <form method="POST" id="contactForm" name="contactForm">
           <div class="modal-header">
-            <h4 class="modal-title" id="maintenanceModalLabel">Add request</h4>
+            <h4 class="modal-title" id="addContactModalLabel">Add Contact</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label for="date">Date</label>
-              <input type="date" class="form-control" name="date" id="date" required placeholder="Enter date">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" name="name" id="name" required placeholder="Enter name">
             </div>
             <div class="form-group">
-              <label for="area">Maintenance Area</label>
-<br>
-<select name="area" width= 100%>
- <option value="wet lab">Wet Lab</option>
-    <option value="Physical Lab">Physical Lab</option>
-    <option value="CF lab">CF Lab</option>
-    <option value="Fiber lab">Fiber Lab</option>
-<option value="Footwear Lab">Footwear Lab</option>
-<option value="Analytical Lab">Analytical Lab</option>
-</select>
-<br>
-<br>
-
-           
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" id="email" required placeholder="Enter Email">
+            </div>
+            <h3>Location</h3>
             <div class="form-group">
-              <label for="eqname">Equipment Name</label>
-              <input type="text" class="form-control" name="eqname" id="eqname" placeholder="Enter Equipment Name">
+              <label for="city">City</label>
+              <input type="text" class="form-control" name="city" id="city" placeholder="Enter City">
             </div>
             <div class="form-group">
-              <label for="eqnumber">Equipment No</label>
-              <input type="text" class="form-control" name="eqnumber" id="eqnumber" placeholder="Enter Equipment No">
+              <label for="email">State</label>
+              <input type="text" class="form-control" name="state" id="state" placeholder="Enter State">
             </div>
             <div class="form-group">
-              <label for="issue">Issue Details</label>
-              <input type="text" class="form-control" name="issue" id="issue" placeholder="Enter Issue Details">
-            </div>
-<div class="form-group">
-              <label for="urgency">Urgency</label>
-<br>
-<select name="urgency">
- <option value="Low">Low</option>
-    <option value="Medium">Medium</option>
-    <option value="High">High</option>
-</select>
-<br>
-</div>
-<div class="form-group">
-              <label for="sender">Request Sender</label>
-              <input type="text" class="form-control" name="sender" id="sender" placeholder="Enter Request Sender Name">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" name="zip" id="zip" placeholder="Enter Zip Code">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary addValue">Submit</button>
           </div>
-
-</form>  
-
-<div class="loading js-loading is-hidden">
-      <div class="loading-spinner">
-        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
-      </div>
-    </div>
-
-    <p class="js-success-message is-hidden">Request receieved Thank you..!</p>
-    <p class="js-error-message is-hidden">Error!</p>
-  </div>
         </form>
       </div>
     </div>
@@ -305,6 +268,5 @@
   <!-- Contacts Store JavaScript -->
   <script src="./functions.js"></script>
   <script src="./script.js"></script>
-  <script src="./form.js"></script>
 </body>
 </html>
