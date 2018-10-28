@@ -44,12 +44,11 @@
           </div>
         </div>
        <form name="submit-to-google-sheet">
-
-        </div>
-        <button type="button" id="maintenanceModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#maintenanceModal">Add Request</button>
+       <button type="button" id="addContactModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#addContactModal">Add Contact</button>
       </center>
-      <div id="maintenance"></div>
+      <div id="contacts"></div>
     </main>
+       
   </div>
  
   </div>
@@ -147,16 +146,17 @@
         </div>
       </div>
     </div>
-   <div class="modal fade" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenance" aria-hidden="true">
+   <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="Add Contact" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-
+        <form method="POST" id="contactForm" name="contactForm">
           <div class="modal-header">
-            <h4 class="modal-title" id="maintenanceModalLabel">Maintenance Request</h4>
+            <h4 class="modal-title" id="addContactModalLabel">Add Contact</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
             <div class="form-group">
+            
 
              <label for="date">Date</label>
               <input type="date" class="form-control" name="date" id="date" required placeholder="Enter date">
