@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
- 
+  <form name="submit-to-google-sheet">
 </head>
 <body class="auth-false">
   <div class="container">
@@ -44,8 +44,12 @@
             <span class="d-inline-block alert alert-warning" role="alert">You can not Add request until you verify your email!</span>
           </div>
         </div>
-        <a href="form.html">Add Request</a>
-      
+        </div>
+      <button type="button" id="addContactModalTrigger" class="btn btn-primary" data-toggle="modal" data-target="#addContactModal">Add Contact</button>
+      </center>
+      <div id="contacts"></div>
+    </main>
+        <a href="form.html">Add Request</a>    
   </div>
   </div>
  
@@ -306,6 +310,6 @@
   <!-- Contacts Store JavaScript -->
   <script src="./functions.js"></script>
   <script src="./script.js"></script>
- 
+  <script src="form.js"></script>
 </body>
 </html>
