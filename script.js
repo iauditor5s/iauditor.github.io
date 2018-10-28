@@ -4,7 +4,7 @@ $(document).ready(function(){
     login: '#loginForm',
     settings: '#settingsForm',
     updateUserInfo: '#updateForm',
-    addContact: '#submit-to-google-sheet',
+    maintenance: '#submit-to-google-sheet',
     register: '#registerForm',
     forgotPassword: '#forgotPasswordForm',
   }
