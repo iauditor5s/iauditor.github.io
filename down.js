@@ -26,10 +26,10 @@ function download_csv(csv, filename) {
 
 function export_table_to_csv(html, filename) {
 	var csv = [];
-	var rows = document.querySelectorAll("table tr");
+	var rows = document.querySelectorAll("table");
 	
     for (var i = 0; i < rows.length; i++) {
-		var row = [], cols = rows[i].querySelectorAll("td, th");
+		var row = [], cols = rows[i].querySelectorAll("table");
 		
         for (var j = 0; j < cols.length; j++) 
             row.push(cols[j].innerText);
