@@ -1,6 +1,7 @@
-$("#btnExport").click(function (e) {
-    $(this).attr({
-        'download': "download.xls",
-            'href': 'data:application/csv;charset=utf-8,' + encodeURIComponent( $('#box').html())
-    })
-});
+$('#Export').click(function () {
+        var csvFormattedDataTable = google.visualization.dataTableToCsv(table);
+        var encodedUri = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csvFormattedDataTable);
+        this.href = encodedUri;
+        this.download = 'table.csv';
+        this.target = '_blank';
+    });
