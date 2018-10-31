@@ -1,5 +1,5 @@
 google.load('visualization', '1', {
-    packages: ['table']
+    packages: ['dataTable']
 });
 var visualization;
 
