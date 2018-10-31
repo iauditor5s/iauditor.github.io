@@ -1,4 +1,6 @@
-$("[id$=myButtonControlID]").click(function(e) {
-    window.open('data:application/vnd.ms-excel,' + encodeURIComponent( $('div[id$=divTableDataHolder]').html()));
-    e.preventDefault();
+$("#btnExport").click(function (e) {
+    $(this).attr({
+        'download': "download.xls",
+            'href': 'data:application/csv;charset=utf-8,' + encodeURIComponent( $('#dvData').html())
+    })
 });
