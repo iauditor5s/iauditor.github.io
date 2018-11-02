@@ -1,7 +1,7 @@
-$('#Export').click(function () {
-        var csvFormattedDataTable = google.visualization.dataTableToCsv(table);
-        var encodedUri = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csvFormattedDataTable);
-        this.href = encodedUri;
-        this.download = 'table-data.csv';
-        this.target = '_blank';
-    });
+function drawToolbar() {
+  var components = [
+      {type: 'csv', datasource: 'https://spreadsheets.google.com/tq?key=1qx5PQ1WM0CbMVjEkOD0h8mFx7vNTbZuAoeVjOU63K1Q'},     
+  ];
+  var container = document.getElementById('Export');
+  google.visualization.drawToolbar(components);
+};
