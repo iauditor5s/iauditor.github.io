@@ -2,10 +2,6 @@ google.load('visualization', '1', {
     packages: ['table']
 });
 var visualization;
-function draw() {
-      drawVisualization();
-      drawToolbar();
-    }
 
 function drawVisualization() {
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1qx5PQ1WM0CbMVjEkOD0h8mFx7vNTbZuAoeVjOU63K1Q&output=html&usp=sharing');
@@ -24,6 +20,5 @@ function handleQueryResponse(response) {
         allowHtml: true,
         legend: 'bottom'
     });
-} 
-
+}
 google.setOnLoadCallback(drawVisualization);
