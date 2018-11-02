@@ -24,20 +24,6 @@ function handleQueryResponse(response) {
         allowHtml: true,
         legend: 'bottom'
     });
-}
-function drawToolbar() {
-      var components = [
-         
-         
-          {type: 'csv', datasource: 'https://spreadsheets.google.com/tq?key=1qx5PQ1WM0CbMVjEkOD0h8mFx7vNTbZuAoeVjOU63K1Q'},
-          
-      ];
-    var container = document.getElementById('toolbar_div');
-      google.visualization.drawToolbar(container, components);
-    };
-
-    google.charts.setOnLoadCallback(draw);
-
-   
+} 
 
 google.setOnLoadCallback(drawVisualization);
