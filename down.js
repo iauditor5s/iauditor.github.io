@@ -1,4 +1,4 @@
-function drawToolbar() {
+$('.Export').on('click', function () {
   var components = [
       {type: 'csv', datasource: 'https://spreadsheets.google.com/tq?key=1qx5PQ1WM0CbMVjEkOD0h8mFx7vNTbZuAoeVjOU63K1Q'},     
   ];
