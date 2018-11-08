@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>iPerform</title>
+  <meta name="description" content="iPerform form submissions in Google Sheets">
+  
+
+  <link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+<h1 id="header_1" class="form-header" data-component="header" align="Middle">
+              iPerform
+            </h1>
+</div>
+  <div class="form-container">
+    <form name="submit-to-google-sheet">
+      <input type="date" name="date" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Perform Date"/>
+      <input type="text" name="eid" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Employee ID" required/>
+      <input type="text" name="job" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Job"/>
+      <input type="text" name="sample" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Sample"/>
+      <input type="text" name="appTest" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Appearence Test"/>
+      <input type="text" name="otherTest" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Others Test"/>
+      <input type="text" name="delivery" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Delivery"/>
+      <input type="text" name="error" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" placeholder="Internal Error"/>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_7">
+        <div id="cid_7" class="form-input-wide">
+          <div data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_matrix" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> ISO Working Area </label>
+        <div id="cid_6" class="form-input-wide">
+          <table summary="" cellPadding="4" cellSpacing="0" class="form-matrix-table" data-component="matrix">
+            <tbody>
+              <tr>
+                <th style="border:none">
+                   
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_0">
+                  Job
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_1">
+                  App Test
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_2">
+                  Others Test
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-089
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_0_0" class="form-textbox" size="5" name="89j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_0_1" class="form-textbox" size="5" name="89a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_0_2" class="form-textbox" size="5" name="89o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-090
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_1_0" class="form-textbox" size="5" name="90j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_1_1" class="form-textbox" size="5" name="90a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_1_2" class="form-textbox" size="5" name="90o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-030
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_2_0" class="form-textbox" size="5" name="30j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_2_1" class="form-textbox" size="5" name="30a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_2_2" class="form-textbox" size="5" name="30o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-031
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_3_0" class="form-textbox" size="5" name="31j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_3_1" class="form-textbox" size="5" name="31a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_3_2" class="form-textbox" size="5" name="31o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-114
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_4_0" class="form-textbox" size="5" name="114j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_4_1" class="form-textbox" size="5" name="114a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_4_2" class="form-textbox" size="5" name="114o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-007
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_5_0" class="form-textbox" size="5" name="007j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_5_1" class="form-textbox" size="5" name="007a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_5_2" class="form-textbox" size="5" name="007o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-006
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_6_0" class="form-textbox" size="5" name="006j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_6_1" class="form-textbox" size="5" name="006a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_6_2" class="form-textbox" size="5" name="006o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-057
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_7_0" class="form-textbox" size="5" name="57j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_7_1" class="form-textbox" size="5" name="57a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_7_2" class="form-textbox" size="5" name="57o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-111
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_8_0" class="form-textbox" size="5" name="111j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_8_1" class="form-textbox" size="5" name="111a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_8_2" class="form-textbox" size="5" name="111o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-112
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_9_0" class="form-textbox" size="5" name="112j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_9_1" class="form-textbox" size="5" name="112a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_9_2" class="form-textbox" size="5" name="112o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-115
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_10_0" class="form-textbox" size="5" name="115j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_10_1" class="form-textbox" size="5" name="115a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_6_10_2" class="form-textbox" size="5" name="115o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_matrix" id="id_10">
+        <label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> AATCC Area </label>
+        <div id="cid_10" class="form-input-wide">
+          <table summary="" cellPadding="4" cellSpacing="0" class="form-matrix-table" data-component="matrix">
+            <tbody>
+              <tr>
+                <th style="border:none">
+                   
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_0">
+                  Job
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_1">
+                  App Test
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_2">
+                  Others Test
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-122
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_0_0" class="form-textbox" size="5" name="122j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_0_1" class="form-textbox" size="5" name="122a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_0_2" class="form-textbox" size="5" name="122o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-123
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_1_0" class="form-textbox" size="5" name="123j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_1_1" class="form-textbox" size="5" name="123a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_1_2" class="form-textbox" size="5" name="123o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-084
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_2_0" class="form-textbox" size="5" name="84j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_2_1" class="form-textbox" size="5" name="84a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_2_2" class="form-textbox" size="5" name="84o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-086
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_3_0" class="form-textbox" size="5" name="86j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_3_1" class="form-textbox" size="5" name="86a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_3_2" class="form-textbox" size="5" name="86o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-099
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_4_0" class="form-textbox" size="5" name="99j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_4_1" class="form-textbox" size="5" name="99a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_4_2" class="form-textbox" size="5" name="99o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-100
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_5_0" class="form-textbox" size="5" name="100j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_5_1" class="form-textbox" size="5" name="100a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_5_2" class="form-textbox" size="5" name="100o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-065
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_6_0" class="form-textbox" size="5" name="65j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_6_1" class="form-textbox" size="5" name="65a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_6_2" class="form-textbox" size="5" name="65o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-082
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_7_0" class="form-textbox" size="5" name="82j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_7_1" class="form-textbox" size="5" name="82a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_7_2" class="form-textbox" size="5" name="82o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-064
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_8_0" class="form-textbox" size="5" name="64j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_8_1" class="form-textbox" size="5" name="64a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_8_2" class="form-textbox" size="5" name="64o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-083
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_9_0" class="form-textbox" size="5" name="83j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_9_1" class="form-textbox" size="5" name="83a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_9_2" class="form-textbox" size="5" name="83o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-136
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_10_0" class="form-textbox" size="5" name="136j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_10_1" class="form-textbox" size="5" name="136a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_10_2" class="form-textbox" size="5" name="136o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-055
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_11_0" class="form-textbox" size="5" name="55j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_11_1" class="form-textbox" size="5" name="55a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_11_2" class="form-textbox" size="5" name="55o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-087
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_12_0" class="form-textbox" size="5" name="87j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_12_1" class="form-textbox" size="5" name="87a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_10_12_2" class="form-textbox" size="5" name="87o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_matrix" id="id_12">
+        <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12"> Miele Area </label>
+        <div id="cid_12" class="form-input-wide">
+          <table summary="" cellPadding="4" cellSpacing="0" class="form-matrix-table" data-component="matrix">
+            <tbody>
+              <tr>
+                <th style="border:none">
+                   
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_0">
+                  Job
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_1">
+                  App Test
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_2">
+                  Others Test
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-093
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_0_0" class="form-textbox" size="5" name="93j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_0_1" class="form-textbox" size="5" name="93a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_0_2" class="form-textbox" size="5" name="93o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-073
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_1_0" class="form-textbox" size="5" name="73j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_1_1" class="form-textbox" size="5" name="73a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_1_2" class="form-textbox" size="5" name="73o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-092
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_2_0" class="form-textbox" size="5" name="92j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_2_1" class="form-textbox" size="5" name="92a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_2_2" class="form-textbox" size="5" name="92o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-072
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_3_0" class="form-textbox" size="5" name="72j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_3_1" class="form-textbox" size="5" name="72a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_3_2" class="form-textbox" size="5" name="72o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-070
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_4_0" class="form-textbox" size="5" name="70j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_4_1" class="form-textbox" size="5" name="70a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_4_2" class="form-textbox" size="5" name="70o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-021
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_5_0" class="form-textbox" size="5" name="21j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_5_1" class="form-textbox" size="5" name="21a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_5_2" class="form-textbox" size="5" name="21o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-067
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_6_0" class="form-textbox" size="5" name="67j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_6_1" class="form-textbox" size="5" name="67a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_6_2" class="form-textbox" size="5" name="67o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-068
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_7_0" class="form-textbox" size="5" name="68j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_7_1" class="form-textbox" size="5" name="68a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_7_2" class="form-textbox" size="5" name="68o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-036
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_8_0" class="form-textbox" size="5" name="36j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_8_1" class="form-textbox" size="5" name="36a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_12_8_2" class="form-textbox" size="5" name="36o" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_matrix" id="id_14">
+        <label class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> PD &amp; DC Area </label>
+        <div id="cid_14" class="form-input-wide">
+          <table summary="" cellPadding="4" cellSpacing="0" class="form-matrix-table" data-component="matrix">
+            <tbody>
+              <tr>
+                <th style="border:none">
+                   
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_0">
+                  Job
+                </th>
+                <th class="form-matrix-column-headers form-matrix-column_1">
+                  Test
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-048
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_0_0" class="form-textbox" size="5" name="48j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_0_1" class="form-textbox" size="5" name="48a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-058
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_1_0" class="form-textbox" size="5" name="58j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_1_1" class="form-textbox" size="5" name="58a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-088
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_2_0" class="form-textbox" size="5" name="88j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_2_1" class="form-textbox" size="5" name="88a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:left" class="form-matrix-row-headers">
+                  TB-104
+                </th>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_3_0" class="form-textbox" size="5" name="104j" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+                <td style="text-align:center" class="form-matrix-values">
+                  <input type="text" id="input_14_3_1" class="form-textbox" size="5" name="104a" style="width:100%;box-sizing:border-box" value="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <button type="submit">Submit</button>
+
+      
+</form>
+
+ <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden">Thank You!</p>
+    <p class="js-error-message is-hidden">Error!</p>
+  </div>
+  
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJNxCrW19jUGIZd6A2tdJ_eQ20bAXoKOFlM00ts6xZAy-A6CPr/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const loading = document.querySelector('.js-loading')
+    const successMessage = document.querySelector('.js-success-message')
+    const errorMessage = document.querySelector('.js-error-message')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+    function showLoadingIndicator () {
+      form.classList.add('is-hidden')
+      loading.classList.remove('is-hidden')
+    }
+    function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        successMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      setTimeout(() => {
+        errorMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+
+  </script>
+
+
+<footer>
+  iFiix<br> 
+  MD.Mahamudul Hassan@2018
+</footer>
+
+</body>
+</html>
+
